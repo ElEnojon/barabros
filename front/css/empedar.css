@@ -1,0 +1,207 @@
+*{
+  margin:0px;
+  padding:0px;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+
+@font-face{
+font-family: Md;
+src: url(../fonts/MidnightStreet.ttf);
+}
+
+
+/*Barra lateral*/
+#sidebar {
+  position: fixed;
+  width: 300px;
+  height: 200%;
+  left: -300px;
+  background: black;
+  z-index: 2;
+  transition: all 500ms linear;
+}
+
+#sidebar.active {
+  left: 0px;
+}
+
+#sidebar ul li {
+
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  list-style: none;
+  padding: 25px 10px;
+  border-bottom: 1px solid rgba(100, 100, 100, .3);
+  text-align: center;
+  z-index: 2;
+  background-color: black;
+}
+
+#sidebar .toggle-btn {
+  position: absolute;
+  left: 330px;
+  top: 20px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+#sidebar .toggle-btn span {
+  display: block;
+  width: 40px;
+  height: 29px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  background-color: black;
+
+}
+
+a{
+	text-decoration-style: none;
+	background-color: black;
+}
+/*Barra lateral*/
+
+
+.d-block {
+color: black;
+-webkit-user-select: none;
+-webkit-user-drag: none;
+user-drag: none;
+}
+
+
+/*Div que contiene las letras*/
+
+.carousel-caption{
+  color: black;
+  background: rgba(0,0,0,0.3);
+  height: 300px;
+  width: 300px;
+  left: 620px;
+  border-radius: 120%;
+  bottom: 50px;
+  background-color: black;
+}
+/*Div que contiene las letras*/
+
+/*
+.carousel-item{
+  background-color: rgba(0,0,0,0.45);
+}*/
+
+.carousel-control-prev{
+background: rgba(0,0,0,0.0);
+
+}
+.carousel-control-next{
+background: rgba(0,0,0,0.0);  
+}
+
+.nameBara{
+  font-family: Md;
+  font-size: 40px;
+  color: white;
+}
+
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M4 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important; 
+}
+
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important; 
+}
+
+.carousel-indicators li {
+  background-color: rgba(0,0,0,0.5) !important;
+}
+
+.carousel-indicators .active {
+    background-color: black !important;
+}
+
+#luces{
+  top: 328px;
+  position: absolute;
+  user-select: none;
+}
+
+#luz1{
+
+  
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+     user-drag: none;
+}
+
+#luz2{
+
+  margin-left: -4px;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+   user-drag: none;
+}
+
+#luz3{
+
+
+  margin-top: -147px;
+  margin-left:1276px;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  user-drag: none;
+
+}
+
+
+
+/*Container*/
+
+.row{
+ padding: 50px;
+ padding-top: 0px;
+}
+
+#barabros{
+  color: black;
+  font-family: Md;
+  font-size: 100px;
+  text-align: center;
+  user-select: none;
+  z-index: 1;
+}
+
+.card:hover{
+
+-webkit-box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.18);
+-moz-box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.18);
+box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.18);
+-webkit-animation:jump 1s ease-out 0s 1 normal;
+-moz-animation:jump 1s ease-out 0s 1 normal;
+-ms-animation:jump 1s ease-out 0s 1 normal;
+animation:jump 1s ease-out 0s 1 normal;
+}
+
+@-webkit-keyframes jump{
+0%{ -webkit-transform:translateY(0); transform:translateY(0); }
+20%{ -webkit-transform:translateY(0); transform:translateY(0); }
+40%{ -webkit-transform:translateY(-30px); transform:translateY(-30px); }
+50%{ -webkit-transform:translateY(0); transform:translateY(0); }
+60%{ -webkit-transform:translateY(-15px); transform:translateY(-15px); }
+80%{ -webkit-transform:translateY(0); transform:translateY(0); }
+100%{ -webkit-transform:translateY(0);transform:translateY(0); }
+}
+
+@keyframes jump{
+0%{ transform:translateY(0); }
+20%{ transform:translateY(0); }
+40%{ transform:translateY(-30px); }
+50%{ transform:translateY(0); }
+60%{ transform:translateY(-15px); }
+80%{ transform:translateY(0); }
+100%{ transform:translateY(0); }
+}
